@@ -57,7 +57,7 @@ const contactUsSlice = createSlice({
       state.message = action.payload.message;
 
       state.isMessageValid =
-        action.payload.message.length >= 10 &&
+        action.payload.message.length >= 50 &&
         action.payload.message.length <= 1000;
 
       state.isFormValid =
@@ -74,7 +74,7 @@ const contactUsSlice = createSlice({
       state.isEmailValid = regEmail.test(state.email);
 
       state.isMessageValid =
-        state.message.length >= 10 && state.message.length <= 1000;
+        state.message.length >= 50 && state.message.length <= 1000;
 
       state.isFormValid =
         state.isNameValid &&

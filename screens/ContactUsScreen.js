@@ -118,7 +118,7 @@ export default function ContactUsScreen() {
           error={!isMessageValid}
         />
         <ErrorText
-          message={'Message must be between 100-1000 words.'}
+          message={'Message must be between 50-1000 words.'}
           isValid={isMessageValid}
         />
       </View>
